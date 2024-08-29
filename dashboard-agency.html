@@ -631,7 +631,7 @@
         <ul class="list-unstyled mb-0">
           <li class="d-flex mb-7">
             <div class="avatar flex-shrink-0 me-4">
-              <span class="avatar-initial rounded-3 bg-label-primary"><i class="ri-user-line ri-24px"></i></span>
+              <span class="avatar-initial rounded-3 bg-label-primary"><i class="ri-facebook-line ri-24px"></i></span>
             </div>
             <div class="d-sm-flex w-100 align-items-center">
               <div class="w-100 mb-2 mb-sm-0 me-sm-4">
@@ -642,7 +642,7 @@
           </li>
           <li class="d-flex mb-7">
             <div class="avatar flex-shrink-0 me-4">
-              <span class="avatar-initial rounded-3 bg-label-info"><i class="ri-user-line ri-24px"></i></span>
+              <span class="avatar-initial rounded-3 bg-label-info"><i class="ri-instagram-line ri-24px"></i></span>
             </div>
             <div class="d-sm-flex w-100 align-items-center">
               <div class="w-100 mb-2 mb-sm-0 me-sm-4">
@@ -653,7 +653,8 @@
           </li>
           <li class="d-flex mb-7">
             <div class="avatar flex-shrink-0 me-4">
-              <span class="avatar-initial rounded-3 bg-label-success"><i class="ri-user-line ri-24px"></i></span>
+              <span class="avatar-initial rounded-3 bg-label-success"><i class="ri-twitter-line ri-24px"></i>
+              </span>
             </div>
             <div class="d-sm-flex w-100 align-items-center">
               <div class="w-100 mb-2 mb-sm-0 me-sm-4">
@@ -665,7 +666,7 @@
           </li>
           <li class="d-flex mb-7">
             <div class="avatar flex-shrink-0 me-4">
-              <span class="avatar-initial rounded-3 bg-label-success"><i class="ri-user-line ri-24px"></i></span>
+              <span class="avatar-initial rounded-3 bg-label-success"><i class="ri-youtube-line ri-24px"></i></span>
             </div>
             <div class="d-sm-flex w-100 align-items-center">
               <div class="w-100 mb-2 mb-sm-0 me-sm-4">
@@ -676,7 +677,7 @@
           </li>
           <li class="d-flex mb-7">
             <div class="avatar flex-shrink-0 me-4">
-              <span class="avatar-initial rounded-3 bg-label-warning"><i class="ri-user-line ri-24px"></i></span>
+              <span class="avatar-initial rounded-3 bg-label-warning"><i class="ri-trophy-line ri-24px"></i></span>
             </div>
             <div class="d-sm-flex w-100 align-items-center">
               <div class="w-100 mb-2 mb-sm-0 me-sm-4">
@@ -684,19 +685,7 @@
               </div>
               <div class="badge bg-label-secondary rounded-pill">450K+</div>
             </div>
-          </li>
-          <li class="d-flex mb-7">
-            <div class="avatar flex-shrink-0 me-4">
-              <span class="avatar-initial rounded-3 bg-label-success"><i class="ri-user-line ri-24px"></i></span>
-            </div>
-            <div class="d-sm-flex w-100 align-items-center">
-              <div class="w-100 mb-2 mb-sm-0 me-sm-4">
-                <h6 class="mb-0">Collaborations</h6>
-              </div>
-              <div class="badge bg-label-secondary rounded-pill">85+</div>
-            </div>
-          </li>
-          
+          </li> 
         </ul>
       </div>
     </div>
@@ -704,45 +693,42 @@
 
   <!--/ Top Courses -->
 
- <!-- Upcoming Collaboration -->
-<div class="col-12 col-xxl-4 col-md-6">
+  <!-- visits By Day Chart-->
+  <div class="col-12 col-xl-4 col-md-6">
     <div class="card h-100">
+      <div class="card-header">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">Visits by Day</h5>
+          <div class="dropdown">
+            <button class="btn btn-text-secondary rounded-pill text-muted border-0 p-1" type="button" id="visitsByDayDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="ri-more-2-line ri-20px"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="visitsByDayDropdown">
+              <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+              <a class="dropdown-item" href="javascript:void(0);">Update</a>
+              <a class="dropdown-item" href="javascript:void(0);">Share</a>
+            </div>
+          </div>
+        </div>
+        <p class="mb-0 card-subtitle">Total 248.5k Visits</p>
+      </div>
       <div class="card-body">
-        <div class="bg-label-primary text-center mb-6 pt-2 rounded-3">
-            <img class="img-fluid w-px-150" src="assets/img/illustrations/faq-illustration.png" alt="Boy card image" />
-        </div>
-        <h5 class="mb-1">Upcoming Event</h5>
-        <p class="mb-6">Join us for an exclusive session on maximizing brand partnerships with top influencers.</p>
-        <div class="row mb-6 g-4">
-          <div class="col-6">
-            <div class="d-flex">
-              <div class="avatar flex-shrink-0 me-4">
-                <span class="avatar-initial rounded-3 bg-label-primary"><i class="ri-calendar-line ri-24px"></i></span>
-              </div>
-              <div>
-                <h6 class="mb-0 text-nowrap fw-normal">25 Aug 24</h6>
-                <small>Date</small>
-              </div>
-            </div>
+        <div id="visitsByDayChart"></div>
+        <div class="d-flex justify-content-between mt-4">
+          <div>
+            <h6 class="mb-0">Most Visited Day</h6>
+            <p class="mb-0 small">Total 62.4k Visits on Thursday</p>
           </div>
-          <div class="col-6">
-            <div class="d-flex">
-              <div class="avatar flex-shrink-0 me-4">
-                <span class="avatar-initial rounded-3 bg-label-primary"><i class="ri-time-line ri-24px"></i></span>
-              </div>
-              <div>
-                <h6 class="mb-0 text-nowrap fw-normal">1 hour</h6>
-                <small>Duration</small>
-              </div>
+          <div class="avatar">
+            <div class="avatar-initial bg-label-primary rounded">
+              <i class="ri-arrow-right-s-line ri-24px scaleX-n1-rtl"></i>
             </div>
           </div>
         </div>
-        <a href="javascript:void(0);" class="btn btn-primary w-100">Join the Event</a>
       </div>
     </div>
   </div>
-  <!--/ Upcoming Collaboration -->
-
+  <!--/ visits By Day Chart-->
   <!-- Popular Instructors -->
   <div class="col-md-6 col-xxl-4">
     <div class="card h-100">
@@ -838,118 +824,7 @@
 
   <!--/ Popular Instructors -->
 
-  <div class="row gy-6">
  
-    <!-- visits By Day Chart-->
-    <div class="col-12 col-xl-4 col-md-6">
-      <div class="card h-100">
-        <div class="card-header">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">Visits by Day</h5>
-            <div class="dropdown">
-              <button class="btn btn-text-secondary rounded-pill text-muted border-0 p-1" type="button" id="visitsByDayDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="ri-more-2-line ri-20px"></i>
-              </button>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="visitsByDayDropdown">
-                <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-                <a class="dropdown-item" href="javascript:void(0);">Update</a>
-                <a class="dropdown-item" href="javascript:void(0);">Share</a>
-              </div>
-            </div>
-          </div>
-          <p class="mb-0 card-subtitle">Total 248.5k Visits</p>
-        </div>
-        <div class="card-body">
-          <div id="visitsByDayChart"></div>
-          <div class="d-flex justify-content-between mt-4">
-            <div>
-              <h6 class="mb-0">Most Visited Day</h6>
-              <p class="mb-0 small">Total 62.4k Visits on Thursday</p>
-            </div>
-            <div class="avatar">
-              <div class="avatar-initial bg-label-primary rounded">
-                <i class="ri-arrow-right-s-line ri-24px scaleX-n1-rtl"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ visits By Day Chart-->
-  
-   <!-- Performance Chart -->
-  <div class="col-12 col-xl-4 col-md-6">
-    <div class="card">
-      <div class="card-header">
-        <div class="d-flex justify-content-between">
-          <h5 class="mb-1">Performance</h5>
-          <div class="dropdown">
-            <button class="btn btn-text-secondary rounded-pill text-muted border-0 p-1" type="button" id="performanceDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="ri-more-2-line ri-20px"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="performanceDropdown">
-              <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
-              <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
-              <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <div id="performanceChart"></div>
-      </div>
-    </div>
-  </div>
-  <!--/ Performance Chart -->
-    <!-- Weekly Sales Chart-->
-    <div class="col-12 col-xl-4 col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">Weekly Engagement</h5>
-            <div class="dropdown">
-              <button class="btn btn-text-secondary rounded-pill text-muted border-0 p-1" type="button" id="weeklySalesDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="ri-more-2-line ri-20px"></i>
-              </button>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="weeklySalesDropdown">
-                <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-                <a class="dropdown-item" href="javascript:void(0);">Update</a>
-                <a class="dropdown-item" href="javascript:void(0);">Share</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row mb-7">
-            <div class="col-6 d-flex align-items-center">
-              <div class="avatar">
-                <div class="avatar-initial bg-label-primary rounded">
-                  <i class="ri-funds-line ri-24px"></i>
-                </div>
-              </div>
-              <div class="ms-3 d-flex flex-column">
-                <p class="mb-0">Total Followers</p>
-                <h6 class="mb-0">98.5K</h6>
-              </div>
-            </div>
-            <div class="col-6 d-flex align-items-center">
-              <div class="avatar">
-                <div class="avatar-initial bg-label-warning rounded">
-                  <i class="ri-money-dollar-circle-line ri-24px"></i>
-                </div>
-              </div>
-              <div class="ms-3 d-flex flex-column">
-                <p class="mb-0">Recent Followers</p>
-                <h6 class="mb-0">22.4K</h6>
-              </div>
-            </div>
-          </div>
-          <div id="weeklySalesChart"></div>
-        </div>
-      </div>
-    </div>
-    <!--/ Weekly Sales Chart-->
-</div>  
 
 
 
